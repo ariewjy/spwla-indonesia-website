@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Aditya Arie Wijaya">
+<meta name="dcterms.date" content="2023-03-01">
+<meta name="description" content="permeability, understanding and intuition">
+
+<title>SPWLA Indonesia Chapter - Permeability, Basics and Klikenberg</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.scss">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SPWLA Indonesia Chapter</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Permeability, Basics and Klikenberg</h1>
+                  <div>
+        <div class="description">
+          permeability, understanding and intuition
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">permeability</div>
+                <div class="quarto-category">klikenberg</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Aditya Arie Wijaya </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 1, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#darcys-equation" id="toc-darcys-equation" class="nav-link active" data-scroll-target="#darcys-equation"><strong>Darcy’s Equation</strong></a></li>
+  <li><a href="#permeability-factors" id="toc-permeability-factors" class="nav-link" data-scroll-target="#permeability-factors"><strong>Permeability Factors</strong></a></li>
+  <li><a href="#permeability-anisotropy" id="toc-permeability-anisotropy" class="nav-link" data-scroll-target="#permeability-anisotropy"><strong>Permeability Anisotropy</strong></a></li>
+  <li><a href="#klinkenberg-permeability" id="toc-klinkenberg-permeability" class="nav-link" data-scroll-target="#klinkenberg-permeability"><strong>Klinkenberg Permeability</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><img src="images/CleanShot 2023-03-02 at 05.18.26@2x.png" class="img-fluid"></p>
+<p>Have you ever stuck in the traffic? Had no place to go, and just wait for the traffic gone. This condition is the same situation with the movement of fluid inside reservoir rock. Imagine you are a motorcycle driver inside a stuck traffic. What can possibly “ease” your movement? The bigger the road, the easier your movement; the less the traffic (less “dense”), the easier you “flow through”; and the higher your speed (differential energy), the faster your movement. These all analogue to permeability.&nbsp;</p>
+<p>Usually, we tend to correlate porosity and permeability together. When the porosity is high, so does the permeability, which in the most cases they do and most of the case they do not. To understand permeability is to understand not only the porosity, but also the fluid, and their interaction. Which is why I do not put porosity and permeability together in the same sentence. Plus, if you want to understand the basic things about porosity, you can find that in the first edition of Petrophysics-101</p>
+<p>In this short bulletin, we will try to explain permeability from the most basic things. From Darcy Equation, what governs permeability, anisotropy, and Klinkenberg permeability.&nbsp;</p>
+<section id="darcys-equation" class="level2">
+<h2 class="anchored" data-anchor-id="darcys-equation"><strong>Darcy’s Equation</strong></h2>
+<p>A bit background story on permeability. Permeability is the intrinsic characteristic of rock, which discovered by France gentlemen named Henri Darcy (1856). Who was working as hydraulic engineer, and wanted to understand flow rate of water inside a sand pack, using simple experiment (Figure 2).&nbsp;</p>
+<p>He then found out that the flow rate across the sand is affected by its differential pressure between two points, the distance between it, and one intrinsic feature, which shown as different gradient (Figure 3). He concluded that the changed of water flux per area (Q/A) vs hydraulic gradient (HfL) will always constant (gradient=permeability=k).&nbsp;</p>
+<p>This last factor is permeability (K), the measurement of connectivity. Or put in the simple words, how easy the fluid will flow across the sand. This is an important factor in reservoir performance, since the rate will be highly affected by how high the permeability is.&nbsp;</p>
+<p>Later after Darcy, people tried to improve his equation (just like Archie’s). Viscosity is added into the equation, as factor that Darcy simply do not matter, because viscosity of water is 1 centipoise (unit for viscosity).&nbsp;</p>
+<p>However, in petrophysics, this cannot oil and (especially) gas are much lighter than water (&lt;1cp). Another interesting point to add, is that “Darcy” is a unit for permeability which we seldom use, due to the fact that 1 Darcy (D) is too big in majority of oil and gas reservoir. In oil and gas industry, people tend to use milliDarcy as unit (1D=1,000mD), simply for a practical use.&nbsp;</p>
+<p>Up until now, Darcy’s equation has been used as a way to measure permeability by knowing the differential pressure (P or in this case is h, pressure is hydrostatic pressure=gh), dimension of the sample (L = Length; and A = Area), and viscosity of the fluid ().&nbsp;</p>
+</section>
+<section id="permeability-factors" class="level2">
+<h2 class="anchored" data-anchor-id="permeability-factors"><strong>Permeability Factors</strong></h2>
+<p>Now that you know about Darcy Equation, if somebody asked you “what parameters/factors that affect my permeability in reservoir”? You are probably going to answer as per Darcy’s equation. It was pressure, viscosity, etc. However, that was right and also wrong. Here is why:&nbsp;</p>
+<p>We knew from previous edition of PTR-101, that pore throat plays a big part in determining rock permeability. So the answer to that question is: pore throat, or you also can say grain size. Not pressure, viscosity, or length. Those parameters in Darcy such as pressure, viscosity, length, and permeability, are what determine the flow rate, where permeability becoming a “factor” not an affected variable. So, if we are talking about what affects permeability, we could not take it from Darcy’s equation. That was correct mathematically, but wrong in petrophysical logic.&nbsp;</p>
+</section>
+<section id="permeability-anisotropy" class="level2">
+<h2 class="anchored" data-anchor-id="permeability-anisotropy"><strong>Permeability Anisotropy</strong></h2>
+<p>Another interesting property that Permeability has but Porosity does not, is anisotropy. Permeability is a vector, while porosity is scalar. Meaning, porosity will always be the same no matter what the direction is (isotropic), while permeability will not (anisotropic). Permeability measurement in horizontal (Kh); parallel to bedding plane, will always higher than vertical measurement (Kv).</p>
+<p>This property makes permeability extremely important, not only because it determines the rate of the fluid but also its heterogeneity. This is a determining factor, especially when dealing with increasing recovery factor of one field. A good understanding about permeability anisotropy in a field scale is fundamental (Figure 4). With a high vertical permeability bottom aquifer could be connected to hydrocarbon zone. Making its recovery less, as more water comes from bottom aquifer.&nbsp;</p>
+</section>
+<section id="klinkenberg-permeability" class="level2">
+<h2 class="anchored" data-anchor-id="klinkenberg-permeability"><strong>Klinkenberg Permeability</strong></h2>
+<p>When talking about permeability measurement in core sample, we often received the data from RCA (Routine Core Analysis). The permeability measurement is using air/ nitrogen as the fluid and measured at ambient condition. At that time, it was considered to be a reliable measurement for permeability, until in 1941, Klinkenberg showed that this was wrong. He showed that air permeability will always be higher than liquid permeability.&nbsp;</p>
+<p>A simple explanation is that the gas is compressible fluid. Unlike liquid such as water (which is incompressible), properties of the gas will highly depend on the pressure acting on it. That is why Klinkenberg saw discrepancies between liquid permeability vs air permeability. Because in ambient condition vs reservoir condition, the pressure will not affect liquid. While on the other hand, gas or air in ambient condition vs reservoir condition will be very different.&nbsp;</p>
+<p><img src="images/CleanShot 2023-03-02 at 05.19.28@2x.png" class="img-fluid" style="width:100.0%"></p>
+<p>Klinkenberg proposed an approach to solve this by plotting multiple measurement of permeability on different pressure (Figure 5). Then plotting of the mean inverse pressure vs permeability is to see the trend where we then can extrapolate the trend to inverse mean pressure equals to zero (which means pressure equals to infinity).&nbsp;</p>
+<p>This was meant to simulate the condition where gas can be liquid, which is a very high pressure condition where the pressure close to infinity.&nbsp;</p>
+<p>There it is, the very basic idea of Klinkenberg Permeability correction.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
