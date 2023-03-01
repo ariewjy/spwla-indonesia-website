@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Official Website of Indonesia Chapter",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "Silabus Training Arie.html",
+    "href": "Silabus Training Arie.html",
+    "title": "SPWLA Indonesia Chapter",
+    "section": "",
+    "text": "Cased Hole Petrophysics Solution in Mature FieldObjective:* Understand the key difference between open hole and cased hole logging environment* Understand the measurement principles of most common cased hole logging tools e.g., pulsed neutron, cement bond.* Understand applications and limitations of pulsed neutron logs for hydrocarbon saturation, well integrity (water flow), and mineralogy. * Understand applications and limitations of cement bond log for well integrity/ structure.* Able to design and evaluate a cased hole logging program to maximize the production and/or ensure the well integrity of the well.Course Materials:Day-11. Basic understanding of Cased Hole Logginga. What makes it different to open hole loggingb. Key factors affecting the measurementsc. Typical measurement principle in cased hole environment (neutron, acoustics, EM)2. Pulsed neutron log for CH saturationa. Pulsed neutron theory and measurement principlesb. Pulsed neutron Sigma for oil and gas saturationc. Pulsed neutron CO for oil saturationd. Quick review on low porosity gas ID technologies from various companies3. Exercisea. Calculating gas/oil saturation from sigma datab. Calculating oil saturation from CO dataDay-21. Pulsed neutron log for well integrity a. Oxygen activation (OA) theoryb. Application and limitations of OA c. Real world cases of OA (including Indonesia)d. Quick review on PN on mineralogy analysis2. Cement bond loga. Basic theory and principle of measurements b. Application and limitationsc. Key curves/ measurement to determine the cement bond qualityd. Micro annulus and channeling3. Cased hole logging design (PN and CBL)a. Objective-based approach vs Tool-based approachb. Well schematic and completion pre-analysisc. Formation evaluation check d. Designing a solution-based approach for CH loggingInternalInternalInternal"
+  }
+]
