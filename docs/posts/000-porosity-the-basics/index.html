@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Aditya Arie Wijaya">
-<meta name="dcterms.date" content="2023-03-01">
-<meta name="description" content="permeability, understanding and intuition">
+<meta name="description" content="Visual understanding, concept and equation">
 
-<title>SPWLA Indonesia Chapter - Permeability, Basics and Klikenberg</title>
+<title>SPWLA Indonesia - Porosity - The Basics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/spwla_id_logo-2.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,8 +62,12 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.scss">
+<meta property="og:title" content="SPWLA Indonesia - Porosity - The Basics">
+<meta property="og:description" content="Visual understanding, concept and equation">
+<meta property="og:site-name" content="SPWLA Indonesia">
 </head>
 
 <body class="nav-fixed">
@@ -74,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">SPWLA Indonesia Chapter</span>
+    <span class="navbar-title">SPWLA Indonesia</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -100,15 +104,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Permeability, Basics and Klikenberg</h1>
+      <h1 class="title">Porosity - The Basics</h1>
                   <div>
         <div class="description">
-          permeability, understanding and intuition
+          Visual understanding, concept and equation
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">permeability</div>
-                <div class="quarto-category">klikenberg</div>
+                <div class="quarto-category">porosity</div>
               </div>
                   </div>
   </div>
@@ -123,12 +126,6 @@ ul.task-list li input[type="checkbox"] {
             </div>
     </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">March 1, 2023</p>
-      </div>
-    </div>
     
       
     </div>
@@ -142,10 +139,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#darcys-equation" id="toc-darcys-equation" class="nav-link active" data-scroll-target="#darcys-equation"><strong>Darcy’s Equation</strong></a></li>
-  <li><a href="#permeability-factors" id="toc-permeability-factors" class="nav-link" data-scroll-target="#permeability-factors"><strong>Permeability Factors</strong></a></li>
-  <li><a href="#permeability-anisotropy" id="toc-permeability-anisotropy" class="nav-link" data-scroll-target="#permeability-anisotropy"><strong>Permeability Anisotropy</strong></a></li>
-  <li><a href="#klinkenberg-permeability" id="toc-klinkenberg-permeability" class="nav-link" data-scroll-target="#klinkenberg-permeability"><strong>Klinkenberg Permeability</strong></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-basics" id="toc-the-basics" class="nav-link" data-scroll-target="#the-basics">The Basics</a></li>
+  <li><a href="#the-importance" id="toc-the-importance" class="nav-link" data-scroll-target="#the-importance">The Importance</a></li>
+  <li><a href="#the-measurement" id="toc-the-measurement" class="nav-link" data-scroll-target="#the-measurement">The Measurement</a>
+  <ul class="collapse">
+  <li><a href="#direct-measurement" id="toc-direct-measurement" class="nav-link" data-scroll-target="#direct-measurement">Direct Measurement</a></li>
+  <li><a href="#indirect-measurement" id="toc-indirect-measurement" class="nav-link" data-scroll-target="#indirect-measurement">Indirect Measurement</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -155,39 +156,90 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="images/CleanShot 2023-03-02 at 05.18.26@2x.png" class="img-fluid"></p>
-<p>Have you ever stuck in the traffic? Had no place to go, and just wait for the traffic gone. This condition is the same situation with the movement of fluid inside reservoir rock. Imagine you are a motorcycle driver inside a stuck traffic. What can possibly “ease” your movement? The bigger the road, the easier your movement; the less the traffic (less “dense”), the easier you “flow through”; and the higher your speed (differential energy), the faster your movement. These all analogue to permeability.&nbsp;</p>
-<p>Usually, we tend to correlate porosity and permeability together. When the porosity is high, so does the permeability, which in the most cases they do and most of the case they do not. To understand permeability is to understand not only the porosity, but also the fluid, and their interaction. Which is why I do not put porosity and permeability together in the same sentence. Plus, if you want to understand the basic things about porosity, you can find that in the first edition of Petrophysics-101</p>
-<p>In this short bulletin, we will try to explain permeability from the most basic things. From Darcy Equation, what governs permeability, anisotropy, and Klinkenberg permeability.&nbsp;</p>
-<section id="darcys-equation" class="level2">
-<h2 class="anchored" data-anchor-id="darcys-equation"><strong>Darcy’s Equation</strong></h2>
-<p>A bit background story on permeability. Permeability is the intrinsic characteristic of rock, which discovered by France gentlemen named Henri Darcy (1856). Who was working as hydraulic engineer, and wanted to understand flow rate of water inside a sand pack, using simple experiment (Figure 2).&nbsp;</p>
-<p>He then found out that the flow rate across the sand is affected by its differential pressure between two points, the distance between it, and one intrinsic feature, which shown as different gradient (Figure 3). He concluded that the changed of water flux per area (Q/A) vs hydraulic gradient (HfL) will always constant (gradient=permeability=k).&nbsp;</p>
-<p>This last factor is permeability (K), the measurement of connectivity. Or put in the simple words, how easy the fluid will flow across the sand. This is an important factor in reservoir performance, since the rate will be highly affected by how high the permeability is.&nbsp;</p>
-<p>Later after Darcy, people tried to improve his equation (just like Archie’s). Viscosity is added into the equation, as factor that Darcy simply do not matter, because viscosity of water is 1 centipoise (unit for viscosity).&nbsp;</p>
-<p>However, in petrophysics, this cannot oil and (especially) gas are much lighter than water (&lt;1cp). Another interesting point to add, is that “Darcy” is a unit for permeability which we seldom use, due to the fact that 1 Darcy (D) is too big in majority of oil and gas reservoir. In oil and gas industry, people tend to use milliDarcy as unit (1D=1,000mD), simply for a practical use.&nbsp;</p>
-<p>Up until now, Darcy’s equation has been used as a way to measure permeability by knowing the differential pressure (P or in this case is h, pressure is hydrostatic pressure=gh), dimension of the sample (L = Length; and A = Area), and viscosity of the fluid ().&nbsp;</p>
+<div id="fig-pebble" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: River’s Pebbles, no scale</figcaption><p></p>
+</figure>
+</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>There is a good chance that any of you who read this, never heard about porosity or might be unfamiliar with the term. However, there is also a good chance that you already familiar with the introduction picture above (Figure 1). In a simplest explanation, this <a href="#fig-pebble">Figure&nbsp;1</a> will be your starting point to understand porosity. By the end of his series, We will (hopefully) understand: “What is porosity”; “Why is it important”; “How we measure it”; and “Who benefits from it”.</p>
 </section>
-<section id="permeability-factors" class="level2">
-<h2 class="anchored" data-anchor-id="permeability-factors"><strong>Permeability Factors</strong></h2>
-<p>Now that you know about Darcy Equation, if somebody asked you “what parameters/factors that affect my permeability in reservoir”? You are probably going to answer as per Darcy’s equation. It was pressure, viscosity, etc. However, that was right and also wrong. Here is why:&nbsp;</p>
-<p>We knew from previous edition of PTR-101, that pore throat plays a big part in determining rock permeability. So the answer to that question is: pore throat, or you also can say grain size. Not pressure, viscosity, or length. Those parameters in Darcy such as pressure, viscosity, length, and permeability, are what determine the flow rate, where permeability becoming a “factor” not an affected variable. So, if we are talking about what affects permeability, we could not take it from Darcy’s equation. That was correct mathematically, but wrong in petrophysical logic.&nbsp;</p>
+<section id="the-basics" class="level1">
+<h1>The Basics</h1>
+<p>To put it simply as shown in the <a href="#fig-pebble-visual">Figure&nbsp;2</a> below, porosity is the “empty spaces” that lies between those pebbles. If we consider the whole dimension of the picture as the total volume, then the porosity is the comparison of the empty spaces between pebbles (illustrated by the yellow shading) vs the total volume (illustrated by multiplying length to width).</p>
+<div id="fig-pebble-visual" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Yellow shading is empty spaces/porosity; X and Y are length and width</figcaption><p></p>
+</figure>
+</div>
+<p>As illustrated in <a href="#fig-pebble-visual">Figure&nbsp;2</a>, if we assume that the total volume is equal to total area of the picture (3 becomes 2 dimension), thus the porosity would be defined as total yellow area divided by total area (X*Y), and since yellow area is the total of empty spaces/ pore therefore:</p>
+<p><span id="eq-porosity"><span class="math display">\[
+\phi = \frac{\sum_{Empty Spaces}}{X\times Y}
+\tag{1}\]</span></span></p>
+<div id="fig-pebble-adj1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: yellow shading is total empty spaces or porosity</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-calculate-por" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-5.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Yellow shading is about 1/6.5 of total area</figcaption><p></p>
+</figure>
+</div>
+<p>Using <a href="#fig-calculate-por">Figure&nbsp;4</a> and <a href="#eq-porosity">Equation&nbsp;1</a>, assuming that the total area is equal to 6.5 unit, or 6.5x of most yellow area on the right side of the picture, then the porosity would be around 15.4%, as shown in the calculation below:</p>
+<p><span class="math display">\[
+\phi = \frac{\sum_{Empty Spaces}}{X\times Y} = 1/6.5 = 0.154
+\]</span></p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Unit of Porosity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the world of petrophysics, the porosity is calculated as value in v/v unit, decp, p.u. (porosity unit), or percentage. It is basically unitless. Which means, it can be written as 0.154 (decimal), 15.4% (percentage) , or 15.4 p.u. (porosity unit) . The latter is a personal recommendation from the author.</p>
+</div>
+</div>
 </section>
-<section id="permeability-anisotropy" class="level2">
-<h2 class="anchored" data-anchor-id="permeability-anisotropy"><strong>Permeability Anisotropy</strong></h2>
-<p>Another interesting property that Permeability has but Porosity does not, is anisotropy. Permeability is a vector, while porosity is scalar. Meaning, porosity will always be the same no matter what the direction is (isotropic), while permeability will not (anisotropic). Permeability measurement in horizontal (Kh); parallel to bedding plane, will always higher than vertical measurement (Kv).</p>
-<p>This property makes permeability extremely important, not only because it determines the rate of the fluid but also its heterogeneity. This is a determining factor, especially when dealing with increasing recovery factor of one field. A good understanding about permeability anisotropy in a field scale is fundamental (Figure 4). With a high vertical permeability bottom aquifer could be connected to hydrocarbon zone. Making its recovery less, as more water comes from bottom aquifer.&nbsp;</p>
+<section id="the-importance" class="level1">
+<h1>The Importance</h1>
+<p>Now that you get the idea of “what” is porosity, you were probably start questioning why should we understand it in oil and gas world? Why is it important to us? The short answer is… because it is where your oil and gas kept beneath the earth. It gives the idea how much is your oil and gas.</p>
+<p>The long answer is, it will become the one of input to calculate reserve calculation through water saturation (<a href="#eq-sw">Equation&nbsp;2</a>) and volumetric calculation (<a href="#eq-stooip">Equation&nbsp;3</a>), the basis of your reservoir characterization through rock typing, and if the rock quality is well-known enough, you can even determine the saturation from only porosity (Buckle Constant*).</p>
+<p><span id="eq-sw"><span class="math display">\[
+S_{w} =  \sqrt{\frac{a \times R_{w}}{\phi \times R_{t}}}
+\tag{2}\]</span></span></p>
+<p><span id="eq-stooip"><span class="math display">\[
+STOOIP = \frac{GRV_{e} \times NTG \times \phi \times (1-S_{w}) }{B_{o}}
+\tag{3}\]</span></span></p>
+<p>Take volumetric calculation as an example. Porosity is affecting two factors here, water saturation using Sw from Archie’s Eq. and STOIIP. Messing up porosity, will make double errors in our final calculation of reserve.</p>
 </section>
-<section id="klinkenberg-permeability" class="level2">
-<h2 class="anchored" data-anchor-id="klinkenberg-permeability"><strong>Klinkenberg Permeability</strong></h2>
-<p>When talking about permeability measurement in core sample, we often received the data from RCA (Routine Core Analysis). The permeability measurement is using air/ nitrogen as the fluid and measured at ambient condition. At that time, it was considered to be a reliable measurement for permeability, until in 1941, Klinkenberg showed that this was wrong. He showed that air permeability will always be higher than liquid permeability.&nbsp;</p>
-<p>A simple explanation is that the gas is compressible fluid. Unlike liquid such as water (which is incompressible), properties of the gas will highly depend on the pressure acting on it. That is why Klinkenberg saw discrepancies between liquid permeability vs air permeability. Because in ambient condition vs reservoir condition, the pressure will not affect liquid. While on the other hand, gas or air in ambient condition vs reservoir condition will be very different.&nbsp;</p>
-<p><img src="images/CleanShot 2023-03-02 at 05.19.28@2x.png" class="img-fluid" style="width:100.0%"></p>
-<p>Klinkenberg proposed an approach to solve this by plotting multiple measurement of permeability on different pressure (Figure 5). Then plotting of the mean inverse pressure vs permeability is to see the trend where we then can extrapolate the trend to inverse mean pressure equals to zero (which means pressure equals to infinity).&nbsp;</p>
-<p>This was meant to simulate the condition where gas can be liquid, which is a very high pressure condition where the pressure close to infinity.&nbsp;</p>
-<p>There it is, the very basic idea of Klinkenberg Permeability correction.</p>
+<section id="the-measurement" class="level1">
+<h1>The Measurement</h1>
+<p>Depending on how we measure it, porosity measurement can be classified into two groups. Direct measurement and Indirect measurement (which we will only discuss a bit).</p>
+<section id="direct-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="direct-measurement">Direct Measurement</h2>
+<p>Direct measurement of porosity is usually related to core data, where we have the real data of what we want to quantify (rock). Direct measurement relies on actual measurement, dimension, volume, pressure, etc. It can be done using several methods, from the simple one: caliper, to the complex one: Boyle’s law.</p>
+</section>
+<section id="indirect-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="indirect-measurement">Indirect Measurement</h2>
+<p>Indirect measurement relies on physical properties of the rock that has implication to porosity. such as Hydrogen Index, Bulk Density and Slownees. This measurement usually related to logging data either Wireline or LWD (well-log measurement). The benefit of this measurement compare to direct measurement is its continuous measurement of data. Since core porosity is discontinuous and a luxury that not every company/petrophysicist has. What usually happen is the logging data is being used as main data to calculate porosity of the rock. While direct measurement of core porosity being used as calibration point for porosity from log (see Track Porosity at <a href="#fig-log">Figure&nbsp;5</a> below). The most common indirect measurements are density, neutron, and sonic/acoustic.</p>
+<div id="fig-log" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-6.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Example of Well-Log Measurement</figcaption><p></p>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

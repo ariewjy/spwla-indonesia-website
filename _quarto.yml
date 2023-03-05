@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "SPWLA Indonesia Chapter"
+  favicon: assets/spwla_id_logo-2.png
+  title: "SPWLA Indonesia"
   navbar:
     background: "#1d3557"
     # foreground: "#fb8500"
@@ -11,9 +12,12 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+  open-graph: true
 
 format:
   html:
-    theme: litera
+    theme: [styles.scss]
     css: styles.scss
     toc: true
+fig-cap-location: bottom
+fig-responsive: true
