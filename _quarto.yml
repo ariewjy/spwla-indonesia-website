@@ -5,6 +5,8 @@ project:
 website:
   favicon: assets/spwla_id_logo-2.png
   title: "SPWLA Indonesia"
+  # sidebar:
+  #   style: docked
   navbar:
     background: "#1d3557"
     # foreground: "#fb8500"
@@ -13,6 +15,9 @@ website:
         text: Home
       - about.qmd
   open-graph: true
+  search:
+    location: navbar
+    type: overlay
 
 format:
   html:
@@ -21,3 +26,6 @@ format:
     toc: true
 fig-cap-location: bottom
 fig-responsive: true
+
+listing:
+  categories: true
