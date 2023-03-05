@@ -16,13 +16,13 @@ listing:
   grid-columns: 2
   image-height: 240px
   # page-size: 100
-  # categories: true
+  categories: true
   # sort-ui: true
   # filter-ui: true
 # page-layout: article
 # title-block-banner: true
 # comments: false
-# citation: false
+# citation: false\
 ---
 
 

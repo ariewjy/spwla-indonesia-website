@@ -1,24 +1,8 @@
 [
   {
-    "listing": "/posts/001-origin-archie-eq/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/000-porosity-the-basics/index.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/001-origin-archie-eq/index.html",
-      "/posts/000-porosity-the-basics/index.html"
-    ]
-  },
-  {
-    "listing": "/about.html",
-    "items": [
-      "/posts/001-origin-archie-eq/index.html",
-      "/index.html",
       "/posts/000-porosity-the-basics/index.html"
     ]
   }
