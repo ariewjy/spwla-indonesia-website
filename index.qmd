@@ -1,28 +1,22 @@
 ---
 title: "Articles"
-description: "Curated articles on Petrophysics"
+description: "Community-curated article in Petrophysics"
 listing:
   fields: [
     image, 
+    date,
     title, 
     description, 
-    date, 
     reading-time, 
     categories
     ]
   contents: posts
-  sort: "date desc"
+  sort: "date asc"
   type: grid
-  grid-columns: 2
-  image-height: 240px
-  # page-size: 100
   categories: true
-  # sort-ui: true
-  # filter-ui: true
-# page-layout: article
-# title-block-banner: true
-# comments: false
-# citation: false\
+  sort-ui: true
+  filter-ui: true
+
 ---
 
 

@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Curated articles on Petrophysics">
+<meta name="description" content="Community-curated article in Petrophysics">
 
 <title>SPWLA Indonesia - Articles</title>
 <style>
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.scss">
 <meta property="og:title" content="SPWLA Indonesia - Articles">
-<meta property="og:description" content="Curated articles on Petrophysics">
+<meta property="og:description" content="Community-curated article in Petrophysics">
 <meta property="og:site-name" content="SPWLA Indonesia">
 </head>
 
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="porosity">porosity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="water saturation">water saturation <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="porosity">porosity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="uncertainty">uncertainty <span class="quarto-category-count">(1)</span></div><div class="category" data-category="water saturation">water saturation <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Curated articles on Petrophysics
+    Community-curated article in Petrophysics
   </div>
 </div>
 
@@ -167,12 +167,59 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="water saturation" data-listing-file-modified-sort="1678033500024" data-listing-reading-time-sort="6">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="uncertainty" data-listing-file-modified-sort="1678540000637" data-listing-reading-time-sort="4.77">
+<a href="./posts/002-petrophysical-uncertainty/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/002-petrophysical-uncertainty/images/paste-12.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Petrophysical Uncertainty
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('uncertainty'); return false;">
+uncertainty
+</div>
+</div>
+<div class="card-text listing-description">
+The importance of knowing uncertainty in petrophysical computation.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="water saturation" data-listing-file-modified-sort="1678535276540" data-listing-reading-time-sort="6">
 <a href="./posts/001-origin-archie-eq/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./posts/001-origin-archie-eq/images/paste-1.png" class="thumbnail-image card-img" style="height: 240px;">
+<img src="./posts/001-origin-archie-eq/images/paste-2.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -193,11 +240,11 @@ The infamous equation he never wrote.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="porosity" data-listing-file-modified-sort="1678012767160" data-listing-reading-time-sort="3.405">
+<div class="g-col-1" data-index="2" data-categories="porosity" data-listing-file-modified-sort="1678535272522" data-listing-reading-time-sort="3.405">
 <a href="./posts/000-porosity-the-basics/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./posts/000-porosity-the-basics/images/paste-2.png" class="thumbnail-image card-img" style="height: 240px;">
+<img src="./posts/000-porosity-the-basics/images/paste-2.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">

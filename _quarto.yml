@@ -5,6 +5,8 @@ project:
 website:
   favicon: assets/spwla_id_logo-2.png
   title: "SPWLA Indonesia"
+  repo-url: https://github.com/ariewjy/spwla-indonesia-website
+  repo-actions: [edit]
   # sidebar:
   #   style: docked
   navbar:
