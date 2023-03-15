@@ -65,7 +65,7 @@ The basic of Monte-Carlo is that it uses random numbers and probability descript
 
 # Knowing Your Uncertainty
 
-Most people will probably think that: \"Why should I concern about this? It just slows down my working progress\".
+Most people will probably think that: "Why should I concern about this? It just slows down my working progress".
 
 Do not underestimate the importance of adding uncertainty consideration in your final report, because knowing uncertainty is essential part of being petrophysicist as it will help us to:
 
