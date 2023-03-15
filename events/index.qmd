@@ -1,0 +1,49 @@
+---
+# image: featured.png
+title: "Student Article Competition"
+description: | 
+  Competition for university students to write about article in Petrophysics
+date: "2021-08-19"
+title-block-banner: true
+categories:
+  - competition
+  - students
+---
+
+::: callout-caution
+## Status of Competition
+
+Please note that this competition is already completed
+:::
+
+Hi everyone, good day! We would like to inform you that we are extending the deadline for student article competition. There will be interesting prizes for all of winners and honorable mentions. List all of requirements and make sure that you're eligible & listed.
+
+# Entry Requirement
+
+-   Open for Indonesian students and recent grad/post-grads
+-   Each team may be written by up to 3 students.
+-   Each team/student can only submit 1 article.
+-   The article must follow [SPWLA Indonesia's template](https://drive.google.com/file/d/18IzkuFeGWJ8ewORXq-siB_umBnIVOVaG/view)
+-   The article must be fully written in English.
+-   The article must be a maximum of 4 pages long (including the figures, captions, references, and list of authors).
+
+# Themes
+
+-   Concept and/or technical review of the existing or new petrophysics-related subject. e.g., "Capillary Pressure in Petrophysics", "Petrophysical analysis in Renewable Energy", "Artificial Intelligence in Petrophysics", etc.
+-   Key: "Make it Simple and Fun to read!"
+
+# Submission
+
+-   The competition is EXTENDED TO 19TH AUGUST 2021.
+-   Submit your article to spwla.indonesia\@gmail.com (word and pdf) before the deadline with the below email subject: SPWLA_Student_Article_Competition\_(personal/group name)
+-   All the submitted articles will be reviewed by our Judges (the final decision is absolute).
+-   Winning articles will be announced in mid September 2021.
+
+# Winning Criteria and Awards
+
+-   Well-written in English.
+-   An article with a simple but thorough explanation with supporting figures, tables, and related references.
+-   The winners shall receive:
+    -   The best 5 article will receive total prize of IDR 1 million
+    -   The top 10 article would be featured in SPWLA Indonesia publication (website, Linkedin, Instagram)
+

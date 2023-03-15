@@ -16,6 +16,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: event.qmd
+        text: Event
   open-graph: true
   search:
     location: navbar

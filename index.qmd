@@ -1,6 +1,7 @@
 ---
 title: "Articles"
 description: "Community-curated article in Petrophysics"
+title-block-banner: true
 listing:
   fields: [
     image, 

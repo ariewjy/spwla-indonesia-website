@@ -1,0 +1,13 @@
+---
+title: "Events"
+description: Community-driven events held by SPWLA Indonesia Chapter
+page-layout: full
+title-block-banner: true
+listing:
+  contents: events
+  sort: "date desc"
+  # type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
