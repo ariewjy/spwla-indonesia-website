@@ -17,8 +17,6 @@ website:
         href: https://www.linkedin.com/in/spwla-chapter-indonesia-785648172/
       - icon: instagram
         href: https://www.instagram.com/spwla_indonesia/
-      - href: submission.qmd
-        text: Submission
 
     left:
       - href: index.qmd
@@ -27,6 +25,8 @@ website:
         text: About
       - href: event.qmd
         text: Event
+      - href: submission.qmd
+        text: Submission
 
   open-graph: true
   search:
