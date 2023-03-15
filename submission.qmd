@@ -6,11 +6,7 @@ description: |
 title-block-banner: true
 ---
 
-### SPWLA Indonesia Chapter Official Website
-
-> This is the official website of Indonesia community for The Society of Petrophysics and Well Log Analysis of Indonesia.
-
-For those who want to create an article in this post, the easiest way is by forking/ clone this repo to your repo, and submit request. To do that, please check the following suggestions:
+For those who want to create an article in this post, the easiest way is by forking/ clone this [repo](https://github.com/ariewjy/spwla-indonesia-website) to your repo, and submit request. To do that, please check the following suggestions:
 
 1.  Clone the official website repo to your local files:
 

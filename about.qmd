@@ -3,11 +3,11 @@ title: "About"
 title-block-banner: true
 ---
 
-SPWLA Indonesia chapter is an extension of Society of Petrophysics and Well Log Analyst of Indonesia. Formed in 2016, by Indonesia petrophysicists with Dr. Luis Quintero in Jakarta. 
+SPWLA Indonesia chapter is an extension of Society of Petrophysics and Well Log Analyst of Indonesia. Formed in 6th of October, 2016, by Indonesia petrophysicists with Dr. Luis Quintero in Jakarta (@fig-2016). 
 
-![The current committee of SPWLA Indonesia](./SPWLA-INA_ORG-CHART.png)
-
-
+![The establishment of SPWLA Indonesia Chapter](images/CleanShot%202023-03-15%20at%2021.43.08.png){#fig-2016}
 
 
+At the moment, SPWLA Indonesia is lead by Didit Putra Kusuma and Ongki Prayoga, as shown in the @fig-commitee below.
 
+![The current committee of SPWLA Indonesia](./SPWLA-INA_ORG-CHART.png){#fig-commitee}
