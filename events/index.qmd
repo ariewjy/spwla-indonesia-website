@@ -8,6 +8,7 @@ title-block-banner: true
 categories:
   - competition
   - students
+image: images/callforarticle_squareformat.png
 ---
 
 ::: callout-caution
@@ -15,6 +16,8 @@ categories:
 
 Please note that this competition is already completed
 :::
+
+![Flyer](images/callforarticle_squareformat.png){width="861"}
 
 Hi everyone, good day! We would like to inform you that we are extending the deadline for student article competition. There will be interesting prizes for all of winners and honorable mentions. List all of requirements and make sure that you're eligible & listed.
 
@@ -46,4 +49,3 @@ Hi everyone, good day! We would like to inform you that we are extending the dea
 -   The winners shall receive:
     -   The best 5 article will receive total prize of IDR 1 million
     -   The top 10 article would be featured in SPWLA Indonesia publication (website, Linkedin, Instagram)
-
