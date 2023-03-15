@@ -12,10 +12,19 @@ website:
   navbar:
     background: "#1d3557"
     # foreground: "#fb8500"
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/spwla-chapter-indonesia-785648172/
+      - icon: instagram
+        href: https://www.instagram.com/spwla_indonesia/
+
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: submission.qmd
+        text: Submission
       - href: event.qmd
         text: Event
   open-graph: true

@@ -1,3 +1,11 @@
+---
+# image: featured.png
+title: "How to Submit Article to Us"
+description: | 
+  Article can be anything related to Petrophysics, Career in Petrophysics, and whatnot
+title-block-banner: true
+---
+
 ### SPWLA Indonesia Chapter Official Website
 
 > This is the official website of Indonesia community for The Society of Petrophysics and Well Log Analysis of Indonesia.
