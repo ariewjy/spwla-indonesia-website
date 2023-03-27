@@ -1,5 +1,5 @@
 ---
-title: "Permeability 101"
+title: "Permeability"
 description: Understanding the basics of permeability.
 date: "2022-03-03"
 # author: Aditya Arie Wijaya

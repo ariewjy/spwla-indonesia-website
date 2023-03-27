@@ -18,6 +18,8 @@ website:
         href: https://www.linkedin.com/in/spwla-chapter-indonesia-785648172/
       - icon: instagram
         href: https://www.instagram.com/spwla_indonesia/
+      # - icon: rss
+      #   href: index.xml
 
     left:
       - href: index.qmd
