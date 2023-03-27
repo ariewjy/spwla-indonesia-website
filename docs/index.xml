@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>SPWLA Indonesia</title>
+<link>www.spwla-indonesia.org/index.html</link>
+<atom:link href="www.spwla-indonesia.org/index.xml" rel="self" type="application/rss+xml"/>
+<description>Community-curated article in Petrophysics</description>
+<generator>quarto-1.2.475</generator>
+<lastBuildDate>Wed, 04 May 2022 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>Petrophysical Uncertainty</title>
+  <link>www.spwla-indonesia.org/posts/002-petrophysical-uncertainty/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<div id="fig-hunter" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/002-petrophysical-uncertainty/images/paste-12.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: A hunter aiming animals</figcaption><p></p>
+</figure>
+</div>
+<p>Let’s imagine a condition where we are hunting a bear or any animal at the forest, we have been waiting and preparing so long just to wait the right moment to fire our gun or our crossbow (Figure&nbsp;1). However, we forgot to calculate the wind effect so that we missed our target and we went back home bringing nothing but sad feelings.</p>
+<p>The same thing can also happen to petrophysicist, after performing “fancy” petrophysical analysis which took a long time to be finished and lots of papers to be read, in the end the result was not as good as we hoped for or maybe we did not get any result at all (no flow)</p>
+<blockquote class="blockquote">
+<p>after performing ‘fancy’ petrophysical analysis which taking so long time to be finished and hundreds of papers to be read, in the end the result is not as good as we hoped for or maybe we do not get any result at all (no flow).</p>
+</blockquote>
+<p>In this edition, we will give you a brief overview about the uncertainty and how it relates to petrophysics.</p>
+</section>
+<section id="random-statistical-vs-systematic-errors" class="level1">
+<h1>Random (Statistical) Vs Systematic Errors</h1>
+<p>All of us know what is error? However, do we know that there are two types of error? They are random (or statistical) and systematic errors. These two terms also apply in Petrophysics realm.</p>
+<p>in Petrophysics, random error (uncertainty) is usually defined as error caused by measurement or how the data was acquired. This type of error is usually called as noise or statistical error and can be reduced by increasing the number of measurement or data gathered. Whereas systematic error is defined as error caused by shifting, intentional “wrong-doing”, poor calibration, wrong model used, and every action that leads to different result from what it should be. This type of error cannot be reduced by averaging process or data gathering.</p>
+<blockquote class="blockquote">
+<p>the systematic uncertainty can appear due to wrong environmental correction, varying well-bore condition, tool limitation, etc. Whereas in core data, it can appear due to measurement errors, volume of data (too little data for calibration), etc.</p>
+</blockquote>
+<p>In addition, the other type of uncertainty is geological uncertainty. However, it is hard to define this particular uncertainty as it is very difficult to be distinguished from random and systematical uncertainties.</p>
+<blockquote class="blockquote">
+<p>the combination of both random and systematic errors is what then define the total error or uncertainty in Petrophysics Realm.</p>
+</blockquote>
+<p>In log data, the systematic uncertainty can appear due to wrong environmental correction, varying well-bore condition, tool limitation, etc. Whereas in core data, it can appear due to measurement errors, volume of data (too little data for calibration), etc.</p>
+<p>In opposite to systematic error which mostly has big impact on the result, statistical error may or may not have big impact on the result. For instance, as we have larger volume of input data to be averaged over a reservoir zone, the less uncertainty that we will have in our log input <span class="citation" data-cites="fylling2002">(Fylling 2002)</span>. However, in multiple wells with limited data availability, incorrect zonal average of petrophysical properties can cause significant difference with the value it should be.</p>
+<p>Putting aside the geological uncertainty for simplicity, therefore the combination of both random and systematic errors is what then define the total error or uncertainty in Petrophysics Realm.</p>
+</section>
+<section id="accuracy-vs-precision" class="level1">
+<h1>Accuracy Vs Precision</h1>
+<p>In data analysis, we often hear about accuracy and precision (Figure&nbsp;2). What is the difference between these two terms? As Petrophysicist, it is good to know the difference of these terms so that we can understand and explain it whenever somebody asks us about what we did.</p>
+<p>Accuracy is used to describe the difference between the measured and true value of a parameter. This accuracy is usually affected by systematic error. Precision is used to describe the distribution of a data around the average measured value. This is usually affected by random error.</p>
+<div id="fig-acc-prec" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/002-petrophysical-uncertainty/images/paste-13.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: The difference between accuracy and precision</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="sensitivity-analysis" class="level1">
+<h1>Sensitivity Analysis</h1>
+<p>Sensitivity analysis is a process that allows us to evaluate the effect of uncertainties in our input parameters to certain result. In Petrophysics case, the method can be read further in a paper published by <span class="citation" data-cites="owens&amp;Cockroft1990">(Owens 1990)</span>. The example of this analysis can be seen in estimation of uncertainty based on Archie equation calculation of Sw for a North Sea Rotliegendes Gas Field, which the results are expressed in terms of % of Gas Initial in Place (GIIP), see below.</p>
+<div id="fig-giip" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/002-petrophysical-uncertainty/images/paste-14.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: GIIP Sensitivity Analysis</figcaption><p></p>
+</figure>
+</div>
+<p>From Figure&nbsp;3 we can see that porosity (Ф) and m have larger effects to the change of GIIP compared to other parameters, thus the uncertainty. Hence, what the petrophysicist should do is focusing their effort of reducing uncertainty on these two parameters.</p>
+</section>
+<section id="monte-carlo-analysis" class="level1">
+<h1>Monte-Carlo Analysis</h1>
+<p>In recent years, the development of computer has provided an opportunity for Monte-Carlo Analysis to be performed in petrophysical analysis. Compared to the analytical method which time consuming to be performed, Monte-Carlo is assumed to be more straightforward.</p>
+<p>The basic of Monte-Carlo is that it uses random numbers and probability descriptors for input variable to investigate problems expressed as mathematical formulae. The example of how this Monte-Carlo was performed in a real case, in a same unit reservoir with different fluid bearing scenario can be seen in paper published <span class="citation" data-cites="adams2005">(Adams 2005)</span>.&nbsp;</p>
+</section>
+<section id="knowing-your-uncertainty" class="level1">
+<h1>Knowing Your Uncertainty</h1>
+<p>Most people will probably think that: “Why should I concern about this? It just slows down my working progress”.</p>
+<p>Do not underestimate the importance of adding uncertainty consideration in your final report, because knowing uncertainty is essential part of being petrophysicist as it will help us to:</p>
+<ol type="1">
+<li><p>Understand the size of uncertainty of our data and result.</p></li>
+<li><p>Understand the sources of uncertainty and putting the order of importance to be addressed.</p></li>
+<li><p>Design the best method or practice of data gathering to eliminate and addressing the greatest source of uncertainty.</p></li>
+<li><p>Give estimation of uncertainty of volumetric calculations.</p></li>
+<li><p>Predict the volumetric probability (P10, P50, P90)</p></li>
+</ol>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-adams2005" class="csl-entry">
+Adams, S. J. 2005. <span>“Quantifying Petrophysical Uncertainties.”</span> <em>All Days</em>, April. <a href="https://doi.org/10.2118/93125-ms">https://doi.org/10.2118/93125-ms</a>.
+</div>
+<div id="ref-fylling2002" class="csl-entry">
+Fylling, Arne. 2002. <span>“Quantification of Petrophysical Uncertainty and Its Effect on in-Place Volume Estimates: Numerous Challenges and Some Solutions.”</span> <em>SPE</em>, September. <a href="https://doi.org/10.2118/77637-ms">https://doi.org/10.2118/77637-ms</a>.
+</div>
+<div id="ref-owens&amp;Cockroft1990" class="csl-entry">
+Owens, Cockroft. 1990. <span>“Sensitivity Analysis of Errors in Reserve Evaluation Due to Core and Log Measurement Inaccuracies.”</span> <em>SCA</em>.
+</div>
+</div></section></div> ]]></description>
+  <category>uncertainty</category>
+  <category>petrophysics-101</category>
+  <guid>www.spwla-indonesia.org/posts/002-petrophysical-uncertainty/index.html</guid>
+  <pubDate>Wed, 04 May 2022 16:00:00 GMT</pubDate>
+  <media:content url="www.spwla-indonesia.org/posts/002-petrophysical-uncertainty/images/paste-12.png" medium="image" type="image/png" height="66" width="144"/>
+</item>
+<item>
+  <title>Capillary Pressure 101</title>
+  <link>www.spwla-indonesia.org/posts/004-capillary-pressure/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<div id="fig-dripping-water" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/004-capillary-pressure/images/paste-1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Dripping Water</figcaption><p></p>
+</figure>
+</div>
+<p>Believe it or not, capillarity is not a rare phenomenon nor a complex thing to understand. There is a big possibility that you have been seeing it in everyday life. From the dripping water in your kitchen tap (Figure&nbsp;1). When you try shake the ketchup bottle to push the last drop of sauce. To why your tree in the backyard can get water from underground soil. The capillarity force is the key to understand all of that.</p>
+<p>Interestingly, this process also plays a big part in geology, especially in rock-fluid interaction. One of its importance is an imbibition-drainage process and saturation-height function. The first is responsible for what we know as hydrocarbon migration and production, while the second is why we will always have a certain amount of water in the reservoir (Swirr), and a certain amount of oil/gas that will never be produced (Sor, Sog).</p>
+<p>In this short article, we will try to explain capillarity forces in reservoir rock. Its characteristics, some factors that affect it, the importance and the application of capillarity data in the petrophysical analysis.</p>
+</section>
+<section id="rock-fluid-interaction" class="level1">
+<h1>Rock-Fluid Interaction</h1>
+<p>Long story short, capillary force is a pressure that “pull” the red liquid in the glass (Figure&nbsp;2). This pressure is affected by several factors, which are: density of the air and water (red liquid), the pore throat radius (straw radius), and the inter-facial tension between two liquids.</p>
+<p>Analog to this, in the reservoir rock, the fluid is a hydrocarbon, while the straw is the pore throat (a connected porosity). One is coming as a property of the fluid, one is coming as a property of the fluid, one is coming from the property of the rock, A rock-fluid interaction.</p>
+<p>Since the fluid inside our reservoir is either oil, gas, water, or combination. Capillary pressure will depend on the size of the pore throat, a function of rock properties. The smaller the pore throat, the higher the liquid saturation is. From Pc data, we will be able to understand how much maximum fluid can be held (saturation) by a certain size of pore throat radius.</p>
+<div id="fig-capillary-forces" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/004-capillary-pressure/images/paste-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Capilary Forces</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="imbibition-drainage" class="level1">
+<h1>Imbibition-Drainage</h1>
+<div id="fig-imbibition-drainage" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/004-capillary-pressure/images/paste-3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Imbibition-drainage hysterisis</figcaption><p></p>
+</figure>
+</div>
+<p>The principal data of Capillary Pressure (Pc) only consists of two data. Water saturation (in X-axis) and Capillary Pressure; Pc (in Y-axis). The figure beside (Figure&nbsp;3) is the example data from the oil- water system. There are two sets of curves inside each graph, which we called as drainage and imbibition.</p>
+<p>Drainage is the decrease of water (wetting phase) and imbibition is the increase of water (wetting phase). Simply, the drainage is when the hydrocarbon is migrating and its buoyancy force pushed water out of reservoir rock and filled the pore with hydrocarbon. On the other way, imbibition is when the hydrocarbon is pushed away from pores. The first (drainage) is analog to the migration phase, the latter (imbibition) is analog to the production phase.</p>
+<blockquote class="blockquote">
+<p>The first (drainage) is analog to the migration phase, the latter (imbibition) is analog to the production phase.</p>
+</blockquote>
+</section>
+<section id="sw-pc-relationship" class="level1">
+<h1>Sw-Pc Relationship</h1>
+<div id="fig-sw-pc" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/004-capillary-pressure/images/paste-4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Sw-Pc Relationship</figcaption><p></p>
+</figure>
+</div>
+<p>In a bigger picture, there is a strong relationship between Pc data and the change of water saturation throughout our reservoir compartment (Figure&nbsp;4, an Oil-Water System example). Three zones are depending on the Pc-Sw relationship data:</p>
+<ol type="1">
+<li><p>Water Zone (the zone between zero Pc and OWC/ Pore entry pressure). This is the zone that will produce only water. As based on Pc, HC pressure needed to be higher than entry pressure to be able to push water out of pores and filled pores with HC.</p></li>
+<li><p>Transition Zone (the zone between Top Transition Zone, where the Pc-Sw curve is starting to reach asymptote and OWC). This zone will be producing water and oil, a mix of fluids.</p></li>
+<li><p>Oil Zone (the zone above Top Transition Zone). Based on Pc data, it can be seen that there is no decrease in Sw even though Pc increased. At this zone, all of the water is irreducible (the pressure, no matter how high it is, simply will not be able to push water out of the pores). This zone will produce only Oil.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>“Pc data can tell a lot of information about how our reservoir behave (rock-fluid interaction), from top to bottom reservoir”</p>
+</blockquote>
+<p>Of course, the amount of water produced from the reservoir (Water Cut) will also depend on relative permeability. Nonetheless, the Pc data can tell a lot of information about how our reservoir behaves (rock-fluid interaction), from top to bottom reservoir. Where can we expect oil, where we can expect oil and water (mix), and where we can only expect water.</p>
+</section>
+<section id="swirr-perm-relationship" class="level1">
+<h1>Swirr-Perm Relationship</h1>
+<p>From a bigger picture to a smaller scale such as a reservoir. Pc data also plays a part in understanding our reservoir.</p>
+<p>Based on Pc data, we know that the bigger the pore throat radius, the less water saturation irreducible is.</p>
+<blockquote class="blockquote">
+<p>“The bigger the pore throat radius, the higher the permeability, the less the Swirr (the higher the Shc that can be produced)”</p>
+</blockquote>
+<div id="fig-sw-pc-k" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/004-capillary-pressure/images/paste-6.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Sw-Pc-K relationship</figcaption><p></p>
+</figure>
+</div>
+<p>We also know that from the Kozeny-Carman experiment, that if the fluid pathway is analogous to the tube, the bigger the radius of the tube, the higher the permeability is.</p>
+<p>Assuming the pore throat radius is the same as effective porosity, we can conclude that the bigger the permeability, the bigger the pore throat radius. The bigger the pore throat radius, the higher the permeability, the less the Swirr (the higher hydrocarbon that can be produced), as can be seen in Figure&nbsp;5.</p>
+<p>This is usually called a good rock-type (most left data on the chart). Where the properties of the rock are so good, and the hydrocarbon that can be produced is high. All of these can be done using Pc data.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>capillary-pressure</category>
+  <category>petrophysics-101</category>
+  <guid>www.spwla-indonesia.org/posts/004-capillary-pressure/index.html</guid>
+  <pubDate>Sun, 03 Apr 2022 16:00:00 GMT</pubDate>
+  <media:content url="www.spwla-indonesia.org/posts/004-capillary-pressure/images/paste-1.png" medium="image" type="image/png" height="73" width="144"/>
+</item>
+<item>
+  <title>Permeability 101</title>
+  <link>www.spwla-indonesia.org/posts/003-permeability/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<div id="fig-traffic" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/003-permeability/images/paste-15.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Traffic</figcaption><p></p>
+</figure>
+</div>
+<p>Have you ever stuck in the traffic? Had no place to go, and just wait for the traffic gone. This condition is the same situation with the movement of fluid inside reservoir rock. Imagine you are a motorcycle driver inside a stuck traffic as displayed in Figure&nbsp;1. What can possibly “ease” your movement? The bigger the road, the easier your movement; the less the traffic (less “dense”), the easier you “flow through”; and the higher your speed (differential energy), the faster your movement. These all analogue to permeability.</p>
+<p>Usually, we tend to correlate porosity and permeability together. When the porosity is high, so does the permeability, which in the most cases they do and most of the case they do not. To understand permeability is to understand not only the porosity, but also the fluid, and their interaction. Which is why I do not put porosity and permeability together in the same sentence. Plus, if you want to understand the basic things about porosity, you can find that in the <a href="https://www.spwla-indonesia.org/posts/000-porosity-the-basics/">previous article</a>.</p>
+<blockquote class="blockquote">
+<p>“When the porosity is high, so does the permeability, which in the most cases they do and most of the case they do not”.</p>
+</blockquote>
+<p>In this short article, we will try to explain permeability from the most basic things. From Darcy Equation, what governs permeability, anisotropy, and Klinkenberg permeability.</p>
+</section>
+<section id="darcys-equation" class="level1">
+<h1>Darcy’s Equation</h1>
+<p>A bit background story on permeability. Permeability is the intrinsic characteristic of rock, which discovered by France gentlemen named Henri Darcy (1856). Who was working as hydraulic engineer, and wanted to understand flow rate of water inside a sand pack, using simple experiment (Figure&nbsp;2).</p>
+<div id="fig-experiement" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/003-permeability/images/paste-17.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Darcy’s experiment</figcaption><p></p>
+</figure>
+</div>
+<p>He then found out that the flow rate across the sand is affected by its differential pressure between two points, the distance between it, and one intrinsic feature, which shown as different gradient (Figure&nbsp;3). He concluded that the changed of water flux per area (Q/A) vs hydraulic gradient (HfL) will always constant (gradient=permeability=k).</p>
+<div id="fig-darcy-result" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/003-permeability/images/paste-18.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Darcy’s Result</figcaption><p></p>
+</figure>
+</div>
+<p>This last factor is permeability (K), the measurement of connectivity. Or put in the simple words, how easy the fluid will flow across the sand. This is an important factor in reservoir performance, since the rate will be highly affected by how high the permeability is. Later after Darcy, people tried to improve his equation (just like Archie’s). Viscosity is added into the equation, as factor that Darcy simply do not matter, because viscosity of water is 1 centipoise (unit for viscosity).</p>
+<p>However, in petrophysics, this cannot oil and (especially) gas are much lighter than water (&lt;1cp). Another interesting point to add, is that “Darcy” is a unit for permeability which we seldom use, due to the fact that 1 Darcy (D) is too big in majority of oil and gas reservoir. In oil and gas industry, people tend to use milliDarcy as unit (1D=1,000mD), simply for a practical use.</p>
+<p>Up until now, Darcy’s equation has been used as a way to measure permeability by knowing the differential pressure (ΔP or in this case is Δh, pressure is hydrostatic pressure=ρgh), dimension of the sample (L = Length; and A = Area), and viscosity of the fluid (μ).</p>
+</section>
+<section id="permeability-factors" class="level1">
+<h1>Permeability Factors</h1>
+<p>Now that you know about Darcy Equation, if somebody asked you “what parameters/factors that affect my permeability in reservoir”? You are probably going to answer as per Darcy’s equation. It was pressure, viscosity, etc. However, that was right and also wrong. Here is why:</p>
+<p>We knew from previous about <a href="https://www.spwla-indonesia.org/posts/000-porosity-the-basics/">porosity</a>, that pore throat plays a big part in determining rock permeability. So the answer to that question is: pore throat, or you also can say grain size. Not pressure, viscosity, or length. Those parameters in Darcy such as pressure, viscosity, length, and permeability, are what determine the flow rate, where permeability becoming a “factor” not an affected variable.</p>
+<blockquote class="blockquote">
+<p>So, if we are talking about what affects permeability, we could not take it from Darcy’s equation. That was correct mathematically, but wrong in petrophysical logic.</p>
+</blockquote>
+</section>
+<section id="permeability-anisotropy" class="level1">
+<h1>Permeability Anisotropy</h1>
+<p>Another interesting property that Permeability has but Porosity does not, is anisotropy. Permeability is a vector, while porosity is scalar. Meaning, porosity will always be the same no matter what the direction is (isotropic), while permeability will not (anisotropic). Permeability measurement in horizontal (Kh); parallel to bedding plane, will always higher than vertical measurement (Kv).</p>
+<p>This property makes permeability extremely important, not only because it determines the rate of the fluid but also its heterogeneity. This is a determining factor, especially when dealing with increasing recovery factor of one field. A good understanding about permeability anisotropy in a field scale is fundamental (Figure&nbsp;4). With a high vertical permeability bottom aquifer could be connected to hydrocarbon zone. Making its recovery less, as more water comes from bottom aquifer</p>
+<blockquote class="blockquote">
+<p>“Porosity will always be the same no matter what the direction is (isotropic), while permeability will not (anisotropic).”</p>
+</blockquote>
+<div id="fig-perm-aniso" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/003-permeability/images/paste-19.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Permeability Anisotropy in field</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="klikenberg-permeability" class="level1">
+<h1>Klikenberg Permeability</h1>
+<p>When talking about permeability measurement in core sample, we often received the data from RCA (Routine Core Analysis). The permeability measurement is using air/ nitrogen as the fluid and measured at ambient condition. At that time, it was considered to be a reliable measurement for permeability, until in 1941, Klinkenberg showed that this was wrong. He showed that air permeability will always be higher than liquid permeability.</p>
+<p>A simple explanation is that the gas is compressible fluid. Unlike liquid such as water (which is incompressible), properties of the gas will highly depend on the pressure acting on it. That is why Klinkenberg saw discrepancies between liquid permeability vs air permeability. Because in ambient condition vs reservoir condition, the pressure will not affect liquid. While on the other hand, gas or air in ambient condition vs reservoir condition will be very different.</p>
+<blockquote class="blockquote">
+<p>This was meant to simulate the condition where gas can be liquid, when the pressure is really high.</p>
+</blockquote>
+<div id="fig-klikenberg-corr" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/003-permeability/images/paste-21.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Klikenberg Permeability Correction</figcaption><p></p>
+</figure>
+</div>
+<p>Klinkenberg proposed an approach to solve this by plotting multiple measurement of permeability on different pressure (Figure&nbsp;5). Then plotting of the mean inverse pressure vs permeability is to see the trend where we then can extrapolate the trend to inverse mean pressure equals to zero (which means pressure equals to infinity).</p>
+<p>This was meant to simulate the condition where gas can be liquid, which is a very high-pressure condition where the pressure close to infinity. There it is, the very basic idea of Klinkenberg Permeability correction.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>permeability</category>
+  <category>petrophysics-101</category>
+  <guid>www.spwla-indonesia.org/posts/003-permeability/index.html</guid>
+  <pubDate>Wed, 02 Mar 2022 16:00:00 GMT</pubDate>
+  <media:content url="www.spwla-indonesia.org/posts/003-permeability/images/paste-15.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Archie’s Equation</title>
+  <link>www.spwla-indonesia.org/posts/001-origin-archie-eq/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>In 1927, the first log (Figure&nbsp;1) was recorded by Schlumberger brothers, 500m deep well in France. Since then, logging tools have been emerged as a way for us to record the physics of rock beneath earth’s surface. 1927; the first electric log (SP and resistivity log), 1932; the first caliper log and dipmeter (along with sidewall coring), and 1939 the first nuclear log (gamma ray). During that time, SP and resistivity were the most used logs to interpret where the oil is. However, the interpretation is merely qualitative, without any quantitative information (porosity, oil saturation). Until 1942, when Gus Archie published paper: “The Electrical Resistivity Log as an Aid in Determining Some Reservoir Characteristics”. He laid the basic foundations of quantitative interpretation between porosity-resistivity and saturation of hydrocarbon in reservoir, which introduced us to the whole new world of modern log interpretation.</p>
+<div id="fig-first-log" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: First Log</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="who-is-he" class="level1">
+<h1>Who is He?</h1>
+<p>Gustave E. Archie (Figure&nbsp;2) was graduated from Wisconsin University in two degrees, Mining and Electrical Engineering. Archie started his professional career in Shell Oil Company, spending more than 30 years (1933-1967) as production engineer, logging engineer, to exploitation manager until his retirement. His most influenced contribution to well log interpretation is pioneering modern well log measurement to determine hydrocarbon reservoir. His contribution towards oil and gas industry earns him a Lester C. Uren Award in 1964 and AIME’s Anthony F. Lucas Gold Medal for recognition of his pioneering achievements in 1978. He has four papers under his name, which help to pave the way from qualitative interpretation towards quantitative interpretation and better understanding about petrophysics as we know today.</p>
+<div id="fig-gus-archie" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Gus Archie (1970-1978)</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="the-origin-of-archies-equation" class="level1">
+<h1>The Origin of Archie’s Equation</h1>
+<p>There are some people who thought that Archie’s equation is like the one that we know today (Equation&nbsp;1). The truth is at the early publication from Gus Archie in 1942, Archie actually never wrote that famous equation explicitly. It took several times to get to there. Instead, he wrote six formulas (Figure&nbsp;3), a step by step of his thought process towards the final equation to calculate water saturation.</p>
+<p>In the final equation, Archie never states the “a” as tortuosity factor and “m” as cementation factor. They are nothing but gradient/ exponents in the relationship from crossplot. In his paper, Archie stated that “m” usually ranges from 1.8-2.0, and “n” usually 2. He never stated anything about “a”, “m”, nor “n” as meaningful constants. Although later on after Archie, several authors have been trying to relate those constants to something related to rock (cementation, wettability, permeability, etc).</p>
+<p><span id="eq-sw"><img src="https://latex.codecogs.com/png.latex?%0AS_%7Bw%7D%20=%20%20%5Csqrt%5Bn%5D%7B%5Cfrac%7Ba%20%5Ctimes%20R_%7Bw%7D%7D%7B%5Cphi%5Em%20%5Ctimes%20R_%7Bt%7D%7D%7D%0A%5Ctag%7B1%7D"></span></p>
+<div id="fig-archie-original" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Original Archie’s Equations</figcaption><p></p>
+</figure>
+</div>
+<p>Out of 4 papers that have been published by Gus Archie, there are 2 fundamental papers that shaped our understanding in petrophysics. First is the 1942’s paper, which talked about quantitative interpretation of well log measurement based on rock properties (porosity and saturation). Second is the 1950’s paper, which talked about rock-type, talking about connection and interaction between porosity-permeability-pore size distribution-water saturation-and capillary pressure (Figure&nbsp;4).</p>
+<div id="fig-rocktype-archie" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Rocktype Archie</figcaption><p></p>
+</figure>
+</div>
+<p>In this paper, it was the first time Archie proposed the term “Petrophysics” as the study of physics of the rock (hence the name; petro-physics). Take a look at what Gus Archie proposed in his paper in 1942:</p>
+<blockquote class="blockquote">
+<p>There is a need for a term to express the physic of rock. It should be related to petrology as much as geophysics is related to geology. “Petrophysics” is the suggested as the term pertaining to the physics of particular rock types, whereas geophysics pertains to the physics of larger rock system composing the earth, (Archie, 1942).</p>
+</blockquote>
+</section>
+<section id="the-development-of-archies-equation" class="level1">
+<h1>The Development of Archie’s Equation</h1>
+<p>After the original paper from Archie in 1942, and continued with several important papers afterwards (1947, 1950, and 1951). The busy years of Gus Archie has passed and successfully changed our understanding towards hydrocarbon evaluation using well log measurement. By far, Archie’s Equation is the most used equation in petrophysical industry. The equation is so robust and reliable in almost any condition of the reservoir. It is simple and it just works.</p>
+<p>However, since 1942 people has been considering that the Archie’s equation needs to be improved. It is in 1944, just 2 years after Archie’s first paper. Hubert Guyod, a Houston-based well logging consultant proposed the term “m” as cementation exponent. Next in 1950, Wyllie and Rose proposed the tortuosity factor (“a”) in Archie’s equation (Figure&nbsp;5). These two insights of Archie’s original equation are crucial, as they reveal the fact that these constants (a &amp; m) are not a single unique number, rather they are related to properties of the rock itself.</p>
+<div id="fig-turtuosity" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-6.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Turtuosity Factor</figcaption><p></p>
+</figure>
+</div>
+<p>Later those years, in 1952, Winsaeur and colleagues from Humble Oil &amp; Refining Company thought that the tortuosity factor is a good idea and did some experiments on sandstone core samples all over US. They found out what we know now as Humble Formula, a different type of Archie, with “a=0.62” and “m=2.15” different from the original Archie’s equation (Figure&nbsp;6). Eventually, after years, in 1960s, Wyllie and Gregory settled and proposed a new form of Archie’s equation, as we know today (Equation&nbsp;1). Where “a”, “m”, and “n” are a constants/ archie’s constants.</p>
+<div id="fig-humble" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-5.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6: Different value for a and m exponent</figcaption><p></p>
+</figure>
+</div>
+<p>Years after that, several authors have been trying to find a way to calculate “m” from porosity. Although some publications were available, these approach of calculating “m” using porosity and other variable, needs to be taken by caution due to its unique and specific case only (Figure&nbsp;7)</p>
+<div id="fig-shell" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-10.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7: Calculating m from Porosity</figcaption><p></p>
+</figure>
+</div>
+<p>Research about “a”, “m”, and “n” of Archie’s equation have been done years after that. Even further, it has been applied to carbonate rocks instead of using just sandstones. One of the most famous publication was done by Jerry F. Lucia from Shell Oil Company, which shows that “m” is vary from different type of porosity, such as fracture porosity and vuggy porosity (Figure&nbsp;8).</p>
+<div id="fig-lucia" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-9.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8: Relationship between rocktype and m value</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="the-non-archie-reservoir" class="level1">
+<h1>The non-Archie Reservoir</h1>
+<p>Although Archie’s equation has been used extensively in oil and gas industry, the reliability of it has been challenged over the past 50 years. Historically speaking, his equation is an empirical equation. Meaning, it was based on actual data that he was working on, with certainly some conditions and treatments which need to be met prior to experiment.</p>
+<p>These conditions (two most important) are matrix is insulator and the only conductivity pathway is saline water in pores. These conditions were met when Archie proposed his equations. However, after Archie, people started to meet challenging reservoir like shaly sand, fresh water, or conductive mineral. These types of reservoir are not the same reservoir as Archie tested. Archie’s tested rock was clean sandstone with good intergranular porosity. These types of reservoir usually called a “Archie Reservoir”, while other challenging reservoir where Archie’s assumptions were not met is called “Non-Archie Reservoir”. Worthington lists all the conditions between Archie and Non-Archie Reservoir (Figure&nbsp;9).</p>
+<div id="fig-archie-criteria" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-11.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;9: Archie Reservoir Criteria (Worthington, 2011)</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="closing-words" class="level1">
+<h1>Closing Words</h1>
+<p>Despite the weaknesses of Archie’s equation, the significance of Archie’s contribution in paving the way for modern log interpretation is unfathomable. His equation is so simple, not simplest. It was based on empirical experiments, and it just works. Although there are over 300 equations have been developed to encounter all Non-Archie reservoir, especially shaly sand. We can clearly say that Gustave E. Archie is the founding father of modern Petrophysics.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>water-saturation</category>
+  <category>petrophysics-101</category>
+  <guid>www.spwla-indonesia.org/posts/001-origin-archie-eq/index.html</guid>
+  <pubDate>Tue, 01 Feb 2022 16:00:00 GMT</pubDate>
+  <media:content url="www.spwla-indonesia.org/posts/001-origin-archie-eq/images/paste-1.png" medium="image" type="image/png" height="32" width="144"/>
+</item>
+<item>
+  <title>Porosity</title>
+  <link>www.spwla-indonesia.org/posts/000-porosity-the-basics/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div id="fig-pebble" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/000-porosity-the-basics/images/paste-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: River’s Pebbles, no scale</figcaption><p></p>
+</figure>
+</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>There is a good chance that any of you who read this, never heard about porosity or might be unfamiliar with the term. However, there is also a good chance that you already familiar with the introduction picture above (Figure 1). In a simplest explanation, this Figure&nbsp;1 will be your starting point to understand porosity. By the end of his series, We will (hopefully) understand: “What is porosity”; “Why is it important”; “How we measure it”; and “Who benefits from it”.</p>
+</section>
+<section id="the-basics" class="level1">
+<h1>The Basics</h1>
+<p>To put it simply as shown in the Figure&nbsp;2 below, porosity is the “empty spaces” that lies between those pebbles. If we consider the whole dimension of the picture as the total volume, then the porosity is the comparison of the empty spaces between pebbles (illustrated by the yellow shading) vs the total volume (illustrated by multiplying length to width).</p>
+<div id="fig-pebble-visual" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/000-porosity-the-basics/images/paste-1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Yellow shading is empty spaces/porosity; X and Y are length and width</figcaption><p></p>
+</figure>
+</div>
+<p>As illustrated in Figure&nbsp;2, if we assume that the total volume is equal to total area of the picture (3 becomes 2 dimension), thus the porosity would be defined as total yellow area divided by total area (X*Y), and since yellow area is the total of empty spaces/ pore therefore:</p>
+<p><span id="eq-porosity"><img src="https://latex.codecogs.com/png.latex?%0A%5Cphi%20=%20%5Cfrac%7B%5Csum_%7BEmpty%20Spaces%7D%7D%7BX%5Ctimes%20Y%7D%0A%5Ctag%7B1%7D"></span></p>
+<div id="fig-pebble-adj1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/000-porosity-the-basics/images/paste-4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: yellow shading is total empty spaces or porosity</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-calculate-por" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/000-porosity-the-basics/images/paste-5.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Yellow shading is about 1/6.5 of total area</figcaption><p></p>
+</figure>
+</div>
+<p>Using Figure&nbsp;4 and Equation&nbsp;1, assuming that the total area is equal to 6.5 unit, or 6.5x of most yellow area on the right side of the picture, then the porosity would be around 15.4%, as shown in the calculation below:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cphi%20=%20%5Cfrac%7B%5Csum_%7BEmpty%20Spaces%7D%7D%7BX%5Ctimes%20Y%7D%20=%201/6.5%20=%200.154%0A"></p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Unit of Porosity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the world of petrophysics, the porosity is calculated as value in v/v unit, decp, p.u. (porosity unit), or percentage. It is basically unitless. Which means, it can be written as 0.154 (decimal), 15.4% (percentage) , or 15.4 p.u. (porosity unit) . The latter is a personal recommendation from the author.</p>
+</div>
+</div>
+</section>
+<section id="the-importance" class="level1">
+<h1>The Importance</h1>
+<p>Now that you get the idea of “what” is porosity, you were probably start questioning why should we understand it in oil and gas world? Why is it important to us? The short answer is… because it is where your oil and gas kept beneath the earth. It gives the idea how much is your oil and gas.</p>
+<p>The long answer is, it will become the one of input to calculate reserve calculation through water saturation (Equation&nbsp;2) and volumetric calculation (Equation&nbsp;3), the basis of your reservoir characterization through rock typing, and if the rock quality is well-known enough, you can even determine the saturation from only porosity (Buckle Constant*).</p>
+<p><span id="eq-sw"><img src="https://latex.codecogs.com/png.latex?%0AS_%7Bw%7D%20=%20%20%5Csqrt%7B%5Cfrac%7Ba%20%5Ctimes%20R_%7Bw%7D%7D%7B%5Cphi%20%5Ctimes%20R_%7Bt%7D%7D%7D%0A%5Ctag%7B2%7D"></span></p>
+<p><span id="eq-stooip"><img src="https://latex.codecogs.com/png.latex?%0ASTOOIP%20=%20%5Cfrac%7BGRV_%7Be%7D%20%5Ctimes%20NTG%20%5Ctimes%20%5Cphi%20%5Ctimes%20(1-S_%7Bw%7D)%20%7D%7BB_%7Bo%7D%7D%0A%5Ctag%7B3%7D"></span></p>
+<p>Take volumetric calculation as an example. Porosity is affecting two factors here, water saturation using Sw from Archie’s Eq. and STOIIP. Messing up porosity, will make double errors in our final calculation of reserve.</p>
+</section>
+<section id="the-measurement" class="level1">
+<h1>The Measurement</h1>
+<p>Depending on how we measure it, porosity measurement can be classified into two groups. Direct measurement and Indirect measurement (which we will only discuss a bit).</p>
+<section id="direct-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="direct-measurement">Direct Measurement</h2>
+<p>Direct measurement of porosity is usually related to core data, where we have the real data of what we want to quantify (rock). Direct measurement relies on actual measurement, dimension, volume, pressure, etc. It can be done using several methods, from the simple one: caliper, to the complex one: Boyle’s law.</p>
+</section>
+<section id="indirect-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="indirect-measurement">Indirect Measurement</h2>
+<p>Indirect measurement relies on physical properties of the rock that has implication to porosity. such as Hydrogen Index, Bulk Density and Slownees. This measurement usually related to logging data either Wireline or LWD (well-log measurement). The benefit of this measurement compare to direct measurement is its continuous measurement of data. Since core porosity is discontinuous and a luxury that not every company/petrophysicist has. What usually happen is the logging data is being used as main data to calculate porosity of the rock. While direct measurement of core porosity being used as calibration point for porosity from log (see Track Porosity at Figure&nbsp;5 below). The most common indirect measurements are density, neutron, and sonic/acoustic.</p>
+<div id="fig-log" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www.spwla-indonesia.org/posts/000-porosity-the-basics/images/paste-6.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Example of Well-Log Measurement</figcaption><p></p>
+</figure>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>porosity</category>
+  <category>petrophysics-101</category>
+  <guid>www.spwla-indonesia.org/posts/000-porosity-the-basics/index.html</guid>
+  <pubDate>Fri, 31 Dec 2021 16:00:00 GMT</pubDate>
+  <media:content url="www.spwla-indonesia.org/posts/000-porosity-the-basics/images/paste-2.png" medium="image" type="image/png" height="69" width="144"/>
+</item>
+</channel>
+</rss>

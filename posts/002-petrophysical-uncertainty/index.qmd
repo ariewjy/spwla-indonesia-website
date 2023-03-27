@@ -3,7 +3,7 @@ title: "Petrophysical Uncertainty"
 description: The importance of knowing uncertainty in petrophysical computation.
 date: "2022-05-05"
 # author: Aditya Arie Wijaya
-categories: uncertainty
+categories: [uncertainty, petrophysics-101]
 title-block-banner: true
 draft: false
 image: images/paste-12.png

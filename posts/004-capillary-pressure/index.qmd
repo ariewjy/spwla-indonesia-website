@@ -3,7 +3,7 @@ title: "Capillary Pressure 101"
 description: Understanding the basics of capillary pressure and its applications.
 date: "2022-04-04"
 # author: Aditya Arie Wijaya
-categories: capillary pressure
+categories: [capillary-pressure, petrophysics-101]
 title-block-banner: true
 draft: false
 image: images/paste-1.png

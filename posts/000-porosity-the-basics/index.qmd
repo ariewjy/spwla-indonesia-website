@@ -1,9 +1,9 @@
 ---
-title: "Porosity 101"
+title: "Porosity"
 description: Visual understanding, concept and equation
 date: "2022-01-01"
 # author: Aditya Arie Wijaya
-categories: porosity
+categories: [porosity, petrophysics-101]
 title-block-banner: true
 draft: false
 # page-layout: article

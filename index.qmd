@@ -12,12 +12,9 @@ listing:
     categories
     ]
   contents: posts
-  sort: "date asc"
-  type: grid
   categories: true
   sort-ui: true
-  filter-ui: true
-
+  feed: true
 ---
 
 

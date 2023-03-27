@@ -8,11 +8,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/000-porosity-the-basics/index.html",
       "/posts/001-origin-archie-eq/index.html",
-      "/posts/003-permeability/index.html",
       "/posts/004-capillary-pressure/index.html",
-      "/posts/002-petrophysical-uncertainty/index.html"
+      "/posts/003-permeability/index.html",
+      "/posts/002-petrophysical-uncertainty/index.html",
+      "/posts/000-porosity-the-basics/index.html"
     ]
   }
 ]

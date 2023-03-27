@@ -3,10 +3,11 @@ title: "Archie's Equation"
 description: The infamous equation he never wrote.
 date: "2022-02-02"
 # author: Aditya Arie Wijaya
-categories: water saturation
+categories: [water-saturation, petrophysics-101]
 title-block-banner: true
 draft: false
-image: images/paste-2.png
+# image: images/paste-2.png
+# image-height: "240"
 # page-layout: article
 ---
 

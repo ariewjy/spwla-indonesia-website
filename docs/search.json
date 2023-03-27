@@ -30,21 +30,21 @@
   {
     "objectID": "posts/000-porosity-the-basics/index.html",
     "href": "posts/000-porosity-the-basics/index.html",
-    "title": "Porosity 101",
+    "title": "Porosity",
     "section": "",
     "text": "Figure 1: River’s Pebbles, no scale"
   },
   {
     "objectID": "posts/000-porosity-the-basics/index.html#direct-measurement",
     "href": "posts/000-porosity-the-basics/index.html#direct-measurement",
-    "title": "Porosity 101",
+    "title": "Porosity",
     "section": "Direct Measurement",
     "text": "Direct Measurement\nDirect measurement of porosity is usually related to core data, where we have the real data of what we want to quantify (rock). Direct measurement relies on actual measurement, dimension, volume, pressure, etc. It can be done using several methods, from the simple one: caliper, to the complex one: Boyle’s law."
   },
   {
     "objectID": "posts/000-porosity-the-basics/index.html#indirect-measurement",
     "href": "posts/000-porosity-the-basics/index.html#indirect-measurement",
-    "title": "Porosity 101",
+    "title": "Porosity",
     "section": "Indirect Measurement",
     "text": "Indirect Measurement\nIndirect measurement relies on physical properties of the rock that has implication to porosity. such as Hydrogen Index, Bulk Density and Slownees. This measurement usually related to logging data either Wireline or LWD (well-log measurement). The benefit of this measurement compare to direct measurement is its continuous measurement of data. Since core porosity is discontinuous and a luxury that not every company/petrophysicist has. What usually happen is the logging data is being used as main data to calculate porosity of the rock. While direct measurement of core porosity being used as calibration point for porosity from log (see Track Porosity at Figure 5 below). The most common indirect measurements are density, neutron, and sonic/acoustic.\n\n\n\nFigure 5: Example of Well-Log Measurement"
   },
@@ -60,7 +60,7 @@
     "href": "index.html",
     "title": "Articles",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPorosity 101\n\n\n3 min\n\n\n\nporosity\n\n\n\nVisual understanding, concept and equation\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchie’s Equation\n\n\n6 min\n\n\n\nwater saturation\n\n\n\nThe infamous equation he never wrote.\n\n\n\nFeb 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPermeability 101\n\n\n5 min\n\n\n\npermeability\n\n\n\nUnderstanding the basics of permeability.\n\n\n\nMar 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapillary Pressure 101\n\n\n4 min\n\n\n\ncapillary pressure\n\n\n\nUnderstanding the basics of capillary pressure and its applications.\n\n\n\nApr 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPetrophysical Uncertainty\n\n\n4 min\n\n\n\nuncertainty\n\n\n\nThe importance of knowing uncertainty in petrophysical computation.\n\n\n\nMay 5, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nArchie’s Equation\n\n\n\n\n\n\n\nwater-saturation\n\n\npetrophysics-101\n\n\n\n\nThe infamous equation he never wrote.\n\n\n\n\n\n\nFeb 2, 2022\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nCapillary Pressure 101\n\n\n\n\n\n\n\ncapillary-pressure\n\n\npetrophysics-101\n\n\n\n\nUnderstanding the basics of capillary pressure and its applications.\n\n\n\n\n\n\nApr 4, 2022\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nPermeability 101\n\n\n\n\n\n\n\npermeability\n\n\npetrophysics-101\n\n\n\n\nUnderstanding the basics of permeability.\n\n\n\n\n\n\nMar 3, 2022\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nPetrophysical Uncertainty\n\n\n\n\n\n\n\nuncertainty\n\n\npetrophysics-101\n\n\n\n\nThe importance of knowing uncertainty in petrophysical computation.\n\n\n\n\n\n\nMay 5, 2022\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nPorosity\n\n\n\n\n\n\n\nporosity\n\n\npetrophysics-101\n\n\n\n\nVisual understanding, concept and equation\n\n\n\n\n\n\nJan 1, 2022\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

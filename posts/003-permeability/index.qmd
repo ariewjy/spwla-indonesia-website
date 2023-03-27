@@ -3,7 +3,7 @@ title: "Permeability 101"
 description: Understanding the basics of permeability.
 date: "2022-03-03"
 # author: Aditya Arie Wijaya
-categories: permeability
+categories: [permeability, petrophysics-101]
 title-block-banner: true
 draft: false
 image: images/paste-15.png
